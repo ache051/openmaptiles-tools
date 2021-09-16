@@ -28,7 +28,8 @@ RUN set -eux  ;\
     DIR=/downloads/lake_centerline  ;\
     mkdir -p "$DIR"  ;\
     cd "$DIR"  ;\
-    wget --quiet https://github.com/lukasmartinelli/osm-lakelines/releases/download/v0.9/lake_centerline.geojson
+    wget --quiet -O lake_centerline.geojson https://github.com/ache051/osm-lakelines/releases/download/v1.0/osm_lake_centerline_no_names_4326.geojson
+    #wget --quiet https://github.com/lukasmartinelli/osm-lakelines/releases/download/v0.9/lake_centerline.geojson
 
 
 FROM osgeo/gdal:alpine-normal-3.0.2
